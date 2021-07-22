@@ -7,3 +7,4 @@ also commment*/
 console.log('My name is '+ firstName +' and I\'m '+ age +' years old.');
 alert('This is an alert');
 var input = prompt('Enter your input');
+document.getElementById("makeItRed").style.color = "red"
