@@ -1,6 +1,6 @@
 console.log('Hello World!');
 var firstName = 'ali';
-var age = '15';
+var age = 15;
 //comment
 /*
 also commment*/
@@ -9,3 +9,11 @@ console.log('My name is '+ firstName +' and I\'m '+ age +' years old.');
 var input = prompt('Enter your input');*/
 document.getElementById("makeItRed").style.color = "red"
 document.write('this is also a test')
+var x= 10;
+x += 5;
+x -= 2;
+x *= 5;
+x /= 5;
+x %= 5;
+//var n = x.toString; // Convert a number to a string
+//var n = x.toFixed(2) // Convert a number into a string, rounding the number to keep only two decimals
