@@ -41,3 +41,8 @@ else if(x!=0 && bool==true){
 else{
     console.log('Else');
 }
+
+document.getElementById("p1").innerHTML= "new";
+var text = document.getElementById("p1").innerHTML;
+console.log(text);
+
