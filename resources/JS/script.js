@@ -15,6 +15,7 @@ x -= 5;
 x *= 5;
 x /= 5;
 x %= 5;
+//x++;
 //var n = x.toString; // Convert a number to a string
 //var n = x.toFixed(2) // Convert a number into a string, rounding the number to keep only two decimals
 var bool = x==2;//equal to
@@ -45,4 +46,4 @@ else{
 document.getElementById("p1").innerHTML= "new";
 var text = document.getElementById("p1").innerHTML;
 console.log(text);
-
+console.log(typeof text);
