@@ -42,6 +42,36 @@ else if(x!=0 && bool==true){
 else{
     console.log('Else');
 }
+//Another way for if-else
+/*bool ? console.log('It works!')
+: console.log('else also works!!')*/
+
+age =16;
+var drink = age >= 18 ? 'beer' : 'juice';
+
+var job = 'teacher';
+switch(job){
+    case 'teacher':
+    case 'instructor':
+        console.log('teaches ppl smth');
+        break;
+    case 'driver':
+        console.log('drives ppl around');
+        break;
+    default:
+        console.log('unemployed');
+}
+switch(true){
+    case age<13:
+        console.log('kid');
+        break;
+    case age >=13 && age <= 20:
+        console.log('young');
+        break;
+    default:
+        console.log('old');
+}
+
 
 document.getElementById("p1").innerHTML= "new";
 var text = document.getElementById("p1").innerHTML;
