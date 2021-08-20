@@ -156,8 +156,58 @@ while(i<names.length){
     i++;
 }
 
+//hoisting
 
+isEven(5);
 
+function isEven(number){
+    if(number%2==0){
+        console.log('Even');
+    }
+    else{
+        console.log('Odd');
+    }
+}
+//function expresstion
+//retire(1998);
+ var retire = function(year){
+     console.log(65 - (2021 - year));
+ }
+
+console.log(hois); // undefined
+var hois = true;
+
+var globalVar = 99;
+function globalTest(){
+    console.log(globalVar); // undefined
+    var globalVar = 100;
+    console.log(globalVar);
+}
+globalTest();
+console.log(globalVar);
+
+console.log(this); // window object
+
+var aliObj = {
+    name: 'ali',
+    yearOfBirth: 1995,
+    calAge3: function(){
+        console.log(this);
+        console.log(2021-this.yearOfBirth);
+        function innerFunction(){
+            console.log(this);
+        }
+        innerFunction();
+    }
+};
+aliObj.calAge3();
+
+var rezaObj = {
+    name: 'reza',
+    yearOfBirth: 1997
+};
+rezaObj.calAge3 = aliObj.calAge3;
+rezaObj.calAge3();
 /*document.getElementById("p1").innerHTML= "new";
 var text = document.getElementById("p1").innerHTML;
 console.log(text);
