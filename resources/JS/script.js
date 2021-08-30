@@ -212,3 +212,9 @@ rezaObj.calAge3();
 var text = document.getElementById("p1").innerHTML;
 console.log(text);
 console.log(typeof text);*/
+
+//Template literals
+
+const zero = 0;
+var myString = `zero or ${zero}`;
+console.log(myString);
